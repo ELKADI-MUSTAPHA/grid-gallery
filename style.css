@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffa500;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+/* to add space between rows and columns use the following property */
+/* grid-gap: 20px; */
+.quote{
+    color: white;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+.main-container{
+    width: 70%;
+    margin: 3rem auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 1px 1px 15px 1px #8b8989;
+}
+.container{
+    display: grid;
+    grid-template-rows: 60px auto;
+    padding: 0 2rem 2rem;
+}
+.col.one{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+.col.one .sec:nth-child(2){
+    text-align: center;
+}
+.col.one .sec:last-child{
+    text-align: right;
+}
+.sec{
+    cursor: pointer;
+}
+.sec.two {
+    font-weight: bold;
+    color: #ffa500;
+    font-size: 1.6rem;
+}
+.sec.three img{
+    transform: rotate(-100deg);
+}
+.col.two{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 20px;
+}
+.item.one{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.item.one img{
+    width: 100%;
+    height: auto;
+}
+.item.two{
+    display: grid;
+    grid-template-columns: 35% auto;
+    column-gap: 20px;
+}
+.item.two img{
+    width: 100%;
+    height: -webkit-fill-available;
+}
+.item.three{
+    display: grid;
+    grid-template-columns: 65% auto;
+    column-gap: 20px;
+}
+.item.three .element.one{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "left right";
+    grid-gap: 20px;
+}
+.header-item{
+    grid-area: header;
+    width: 100%;
+}
+.left-item{
+    grid-area: left;
+    width: 100%;
+}
+.right-item{
+    grid-area: right;
+    width: 100%;
+}
+.element.two img{
+    width: 100%;
+    height: -webkit-fill-available;
+}
+.item.four{
+    display: grid;
+    grid-template-columns: 50% auto;
+    column-gap: 20px;
+}
+.item.four img{
+    width: 100%;
+    height: -webkit-fill-available;
+}
